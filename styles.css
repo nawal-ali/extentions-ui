@@ -43,6 +43,14 @@
 
     --buttons-padding:0.7rem 0.9rem;
 }
+@font-face {
+    font-family: 'NotoSans';
+    src: url('assets/fonts/NotoSans-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NotoSansI';
+    src: url('assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+}
 
 body{
     background: var(--bg);
@@ -88,4 +96,6 @@ nav{
     border: 3px solid var(--secondary-bg);
     background-color: var(--button--primary-bg)
 }
+
+
 
