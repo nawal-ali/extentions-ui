@@ -51,6 +51,18 @@
     font-family: 'NotoSansI';
     src: url('assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'NotoSansB';
+    src: url('assets/fonts/static/NotoSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NotoSansMed';
+    src: url('assets/fonts/static/NotoSans-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NotoSansR';
+    src: url('assets/fonts/static/NotoSans-Regular.ttf') format('truetype');
+}
 
 body{
     background: var(--bg);
@@ -97,5 +109,19 @@ nav{
     background-color: var(--button--primary-bg)
 }
 
-
+h1{
+    font-family: 'NotoSans',sans-serif;
+    color: var(--text-primary);
+}
+.filter-buttons button{
+    cursor: pointer;
+    background-color: var(--card-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+    font-family: 'NotoSansMed',sans-serif;
+    font-size: 1rem;
+    transition: all 200ms ease-in-out;
+}
 
