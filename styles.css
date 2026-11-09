@@ -32,13 +32,13 @@
     --card-shadow:var(--neutral-200);
 
     --text-primary:var(--neutral-900);
-    --text-body:var(--neutral-700);
+    --text-body:var(--neutral-600);
 
     --border-primary:var(--neutral-200);
     --border-secondary:var(--neutral-300);
 
-    --button--primary-bg:var(--neutral-100);
-    --button--secondary-bg:var(--neutral-300);
+    --button-primary-bg:var(--neutral-100);
+    --button-secondary-bg:var(--neutral-300);
 
 
     --buttons-padding:0.7rem 0.9rem;
@@ -91,9 +91,10 @@ nav{
     /* [inset] [X-offset] [Y-offset] [blur-radius] [spread-radius] [color] */
     box-shadow: 1px 1px 5px 1px var(--card-shadow);
 }
+
 #toggle-dark-mode{
     cursor: pointer;
-    background-color: var(--button--primary-bg);
+    background-color: var(--button-primary-bg);
     padding: var(--buttons-padding);
     border-radius: 15px;
     border: 3px solid transparent;
@@ -101,12 +102,12 @@ nav{
 }
 
 #toggle-dark-mode:hover{
-    background-color: var(--button--secondary-bg);
+    background-color: var(--button-secondary-bg);
 }
 
 #toggle-dark-mode:focus{
     border: 3px solid var(--secondary-bg);
-    background-color: var(--button--primary-bg)
+    background-color: var(--button-primary-bg)
 }
 
 h1{
@@ -134,7 +135,7 @@ h1{
     border: none;
     border-radius: 12px;
     position: relative;
-    background-color: var(--button--secondary-bg);
+    background-color: var(--button-secondary-bg);
 }
 
 #switch-container #switch-ball{
@@ -153,5 +154,47 @@ h1{
 }
 .active-switch #switch-container #switch-ball{
     left: 23px ;
+}
+.extensions-list{
+    margin-top: 2rem;
+}
+.extension-card{
+    background-color: var(--card-bg);
+    padding: 1rem;
+    font-family: 'NotoSansR',sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:40px;
+    border: 2px solid var(--border-primary);
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 1px var(--card-shadow);
+}
+.extension-info-container{
+    display: flex;
+    gap:10px
+}
+.extension-info>h2{
+    font-family: 'NotoSansB',sans-serif;
+    color: var(--text-primary);
+}
+.extension-info>p{
+    font-family: 'NotoSansR',sans-serif;
+    color: var(--text-body);
+}
+.extension-actions{
+    display: flex;
+    justify-content: space-between;
+}
+.remove-button{
+cursor: pointer;
+    background-color: var(--card-bg);
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-secondary);
+    color: var(--text-primary);
+    font-family: 'NotoSansB',sans-serif;
+    transition: all 200ms ease-in-out;
+
 }
 
