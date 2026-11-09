@@ -120,8 +120,38 @@ h1{
     border-radius: 20px;
     border: 1px solid var(--border-primary);
     color: var(--text-primary);
-    font-family: 'NotoSansMed',sans-serif;
+    font-family: 'NotoSansR',sans-serif;
     font-size: 1rem;
+    font-weight: 500;
     transition: all 200ms ease-in-out;
+}
+
+
+#switch-container{
+    cursor: pointer;
+    width: 43px;
+    height: 21px;
+    border: none;
+    border-radius: 12px;
+    position: relative;
+    background-color: var(--button--secondary-bg);
+}
+
+#switch-container #switch-ball{
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    transition: all 200ms ease-in-out;
+}
+.active-switch #switch-container{
+    background-color: var(--primary-bg);
+}
+.active-switch #switch-container #switch-ball{
+    left: 23px ;
 }
 
